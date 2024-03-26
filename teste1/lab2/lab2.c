@@ -29,11 +29,11 @@ int main(int argc, char *argv[]) {
   return 0;
 }
 
-int(timer_test_read_config)(uint8_t timer, enum timer_status_field field) {
+int(timer_test_read_config)(uint8_t timer, enum timer_status_field field) { //serve para ler o status do timer e guardar num uint8_t para depois ser impresso no ecrã, o primeiro argumento é o timer (0,1 ou 2) que queremos ler e o segundo é o campo que queremos ler
   /* To be implemented by the students */
   printf("%s is not yet implemented!\n", __func__);
 
-  return 1;
+  return 1; //retorna 1 se houver algum erro, 0 se correr tudo bem
 }
 
 int(timer_test_time_base)(uint8_t timer, uint32_t freq) {
